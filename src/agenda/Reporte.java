@@ -109,7 +109,7 @@ jfReporte.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  
  public static void obtenerInformacion(){
  try{
- File url = new File("inicioAgenda\\Report.p2");
+ File url = new File("Agenda\\Report.p2");
  /**
   * Obtiene la direccion del archivo para enviarla
   */
@@ -142,7 +142,7 @@ jfReporte.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  }
  public static void cargarArchivo(){
  try {
-            File linkCarpeta = new File("inicioAgenda\\Report.p2");
+            File linkCarpeta = new File("Agenda\\Report.p2");
            FileReader verLink = new FileReader(linkCarpeta);
             BufferedReader leerDatos = new BufferedReader(verLink);
            
@@ -166,7 +166,7 @@ public  void reportSesion() throws FileNotFoundException, IOException, DocumentE
     Font fontTitulos = FontFactory.getFont(FontFactory.COURIER, 35, Font.UNDERLINE, BaseColor.RED);
     try{
      // Document document = new Document();
- FileOutputStream link = new FileOutputStream("inicioAgenda\\Reporte_sesion.pdf"); 
+ FileOutputStream link = new FileOutputStream("Agenda\\Reporte_sesion.pdf"); 
                 // Document document = new Document();
                 Document document = new Document(PageSize.A4, 35, 30, 50, 50);
                 PdfWriter.getInstance(document, link);
@@ -237,7 +237,7 @@ public  void reportSesion() throws FileNotFoundException, IOException, DocumentE
     Font fontTitulos = FontFactory.getFont(FontFactory.COURIER, 25, Font.UNDERLINE, BaseColor.CYAN);
     try{
      // Document document = new Document();
- FileOutputStream direccion = new FileOutputStream("inicioAgenda\\ActividadPorMes"+Login.nombArchivo+".pdf"); 
+ FileOutputStream direccion = new FileOutputStream("Agenda\\ActividadPorMes"+Login.nombArchivo+".pdf"); 
                 // Document document = new Document();
                 Document document = new Document(PageSize.A4, 35, 30, 50, 50);
                 PdfWriter.getInstance(document,direccion);
@@ -297,7 +297,7 @@ public  void reportSesion() throws FileNotFoundException, IOException, DocumentE
         
         
          try{
-             FileOutputStream url2 = new FileOutputStream("inicioAgenda\\Contactos"+Login.nombArchivo+".pdf");
+             FileOutputStream url2 = new FileOutputStream("Agenda\\Contactos"+Login.nombArchivo+".pdf");
              
             
    int count=Contacto.Tabla.getRowCount();
@@ -363,7 +363,7 @@ public  void reportSesion() throws FileNotFoundException, IOException, DocumentE
              //FileOutputStream url2 = new FileOutputStream("C:\\Users\\JosDark\\Documents\\NetBeansProjects"
                //     + "\\inicioAgenda\\DiasFestivo"+Login.nombArchivo+".pdf");
              
-             FileOutputStream url2 = new FileOutputStream("inicioAgenda\\DiasFestivo"+Login.nombArchivo+".pdf");
+             FileOutputStream url2 = new FileOutputStream("Agenda\\DiasFestivo"+Login.nombArchivo+".pdf");
              
             
    int count=DiasFestivo.Tabla.getRowCount();
@@ -422,7 +422,7 @@ public  void reportSesion() throws FileNotFoundException, IOException, DocumentE
             // FileOutputStream url2 = new FileOutputStream("C:\\Users\\JosDark\\Documents\\NetBeansProjects"
              //       + "\\inicioAgenda\\Marcadores"+Login.nombArchivo+".pdf");
              
-             FileOutputStream url2 = new FileOutputStream("inicioAgenda\\Marcadores"+Login.nombArchivo+".pdf");
+             FileOutputStream url2 = new FileOutputStream("Agenda\\Marcadores"+Login.nombArchivo+".pdf");
              
             
    int count=Marcadores.Tabla.getRowCount();
