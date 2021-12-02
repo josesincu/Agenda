@@ -367,11 +367,9 @@ public static Date fechaSalida;
         
     }if(e.getSource()==btnReporte){
      
-    fechaSalida= new Date();    
-    Reporte.obtenerInformacion();
-    
+     fechaSalida= new Date();    
+     Reporte.obtenerInformacion();
      jfPrincipal.setVisible(false);
-     
      Reporte rep = new Reporte();
      Reporte.cargarArchivo();
      //cuando instancio al objeto se carga perfecrtmamente
@@ -388,7 +386,7 @@ public static Date fechaSalida;
     */
    public void Guardar(){
     try{   
-   FileWriter enviar = new FileWriter("inicioAgenda\\Contenidos");
+   FileWriter enviar = new FileWriter("Agenda\\Contenidos");
     
    //Idea uno hacer un metodo para cada archivo y guardar con el nombre del usuario y llamar a los metodos
    //construir para cada clase un archivo
